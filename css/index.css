@@ -1,0 +1,308 @@
+:root {
+  font-size : 100%;
+  font-family : "Montserrat", system-ui, sans-serif;
+  scroll-behavior : smooth;
+}
+* , *::before , *::after {
+  margin : 0;
+  padding : 0;
+  border : 0;
+  box-sizing : border-box;
+  vertical-align : baseline;
+}
+*::before , *::after {
+  display : block;
+}
+img , picture , video , iframe , figure , canvas {
+  max-width : 100%;
+  display : block;
+  width : 100%;
+  height : initial;
+  object-fit : cover;
+  object-position : center center;
+}
+a {
+  display : block;
+  text-decoration : none;
+  color : inherit;
+  font :  inherit;
+}
+p a {
+  display : inline;
+}
+li , menu, summary {
+  list-style-type : none;
+}
+ol {
+  counter-reset : revert;
+}
+h1 , h2 , h3 , h4 , h5 , h6 , p , span , a , strong , blockquote , i , b , u , em , pre , code , mark , del {
+  font :  inherit;
+  line-height :  1em;
+  text-decoration :  none;
+  color : inherit;
+  overflow-wrap : break-word;
+  text-wrap : pretty;
+}
+mark {
+  background-color : transparent;
+}
+blockquote::before , blockquote::after , q::before , q::after {
+  content : none;
+}
+form , input , textarea , select , button , label {
+  font :  inherit;
+  hyphens : auto;
+  background-color : transparent;
+  color : inherit;
+  display : block;
+  appearance : none;
+}
+fieldset {
+  border : none;
+}
+::placeholder {
+  color : unset;
+}
+button , label {
+  cursor : pointer;
+}
+table , tr , td , th , tbody , thead , tfoot {
+  border-collapse : collapse;
+  border-spacing : 0;
+  font : inherit;
+}
+svg {
+  width : 100%;
+  height : initial;
+  display : block;
+  fill : currentColor;
+}
+body {
+  min-height : 100vh;
+  line-height : 1.5em;
+  color : inherit;
+  hyphens : auto;
+  font-smooth : always;
+  -webkit-font-smoothing : antialiased;
+  -moz-osx-font-smoothing : grayscale;
+}
+
+/* Header y Navegacion */
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0px auto;
+    padding: 30px 40px;
+}
+
+.Header-h1 img {
+    height: 22px;
+    width: auto;
+}
+
+.Navegacion-ul {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.Navegacion-ul a {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.Navegacion-ul a:hover {
+    opacity: 0.5;
+}
+
+/* Hero */
+.Hero {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+}
+
+.Hero a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Imagen de fondo azul/morada */
+.hero-bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Contenedor del logo Inside Out 2 */
+.hero-h2 {
+    position: relative;
+    z-index: 2;
+    padding: 0px 20px;
+}
+
+/* Imagen del logo Inside Out 2 */
+.hero-logo {
+    width: 500px;
+    max-width: 100%;
+}
+
+/* Proyectos */
+.Proyectos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 28px;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0px 40px;
+}
+
+.Hoopers-figure,
+.Toystory-figure,
+.Win-or-lose-figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Proyectos img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.Proyectos h3 {
+    margin-top: 18px;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+/* footer */
+.Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px 80px 20px;
+}
+
+/* Iconos de redes sociales */
+.Footer-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 35px;
+}
+
+.Footer-ul img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Textos legales subrayados */
+.Legales-ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 18px;
+    max-width: 650px;
+    margin-bottom: 16px;
+}
+
+.Legales-ul a {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #333333;
+    border-bottom: 1px solid #999999;
+    padding-bottom: 2px;
+}
+
+/* Texto de Copyright */
+.Footer p {
+    margin-bottom: 30px;
+}
+
+.Footer small {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #555555;
+}
+
+/* Botón final gris con letras verdes */
+.Footer button {
+    background-color: #f4f4f4;
+    border: 1px solid #cccccc;
+    color: #5a7d5a;
+    font-size: 12px;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+/* Para Tablets (pantallas menores a 900 píxeles) */
+@media (max-width: 900px) {
+    .Header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 24px 20px;
+    }
+
+    .Navegacion-ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px 20px;
+    }
+
+    .Proyectos {
+        grid-template-columns: 1fr 1fr; /* Pasa de 3 a 2 columnas */
+        margin: 50px auto;
+        padding: 0px 20px;
+    }
+}
+
+/* Para Móviles (pantallas menores a 600 píxeles) */
+@media (max-width: 600px) {
+    .Hero {
+        height: 320px;
+    }
+
+    .hero-logo {
+        width: 280px;
+    }
+
+    .Proyectos {
+        grid-template-columns: 1fr; /* Pasa a 1 sola columna */
+        gap: 40px;
+        margin: 40px auto;
+    }
+
+    .Legales-ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .Footer button {
+        width: 100%;
+        max-width: 320px;
+    }
+}
